@@ -2,7 +2,7 @@
 #define _qMarkedWidget_h
 
 //qt include
-#include <qWidget.h>
+#include <qWidget>
 
 //std include
 #include <string>
@@ -52,6 +52,5 @@ private:
 	Q_DECLARE_PRIVATE(qMarkedWidget);
 	Q_DISABLE_COPY(qMarkedWidget);
 };
-
 
 #endif // !_qMarkedWidget_h

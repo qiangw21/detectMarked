@@ -21,6 +21,9 @@ public:
 	int get_image_height();
 	bool is_null();
 
+	void set_is_editor(bool on);
+	bool is_editor();
+
 public slots:
 	void set_current_pos(const QPoint& pos);
 

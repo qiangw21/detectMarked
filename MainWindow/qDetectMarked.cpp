@@ -32,6 +32,10 @@ void qDetectMarkedPrivate::init()
 	Q_Q(qDetectMarked);
 	this->setupUi(q);
 	this->markedWidget->installEventFilter(q);
+	QWidget* pTitleWidget = this->editorWidget->titleBarWidget();
+	QWidget* pWidget = new QWidget;
+	this->editorWidget->setTitleBarWidget(pWidget);
+	delete pTitleWidget;
 	
 }
 

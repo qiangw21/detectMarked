@@ -36,7 +36,7 @@ public:
 // qMarkedWidgetPrivate methods
 //-----------------------------------------------------------------------------
 qMarkedWidgetPrivate::qMarkedWidgetPrivate(qMarkedWidget& object)
-	:q_ptr(&object)
+	: q_ptr(&object)
 {
 
 }

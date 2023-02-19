@@ -85,6 +85,18 @@ bool qMarkedViewer::is_null()
 	return d->DisplayImage.isNull();
 }
 
+bool qMarkedViewer::is_editor()
+{
+	Q_D(qMarkedViewer);
+	return d->IsEditor;
+}
+
+void qMarkedViewer::set_is_editor(bool on)
+{
+	Q_D(qMarkedViewer);
+	d->IsEditor = on;
+}
+
 void qMarkedViewer::set_current_pos(const QPoint& pos)
 {
 	Q_D(qMarkedViewer);
